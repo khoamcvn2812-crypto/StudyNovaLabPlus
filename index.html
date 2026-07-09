@@ -2016,14 +2016,15 @@ renderBackupBanner();
    Điền config Firebase ở đây sau khi tạo project Firebase.
    API key Firebase web config là public bình thường; bảo vệ dữ liệu bằng Firestore Rules.
 */
-window.STUDYNOVA_FIREBASE_CONFIG = window.STUDYNOVA_FIREBASE_CONFIG || {
-  apiKey: "PASTE_FIREBASE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.appspot.com",
-  messagingSenderId: "PASTE_SENDER_ID",
-  appId: "PASTE_APP_ID"
-};
+const firebaseConfig = {
+    apiKey: "AIzaSyDablhwhvV3QMdcDG5nMNdx9YjMeEDiS9E",
+    authDomain: "studynovalab.firebaseapp.com",
+    projectId: "studynovalab",
+    storageBucket: "studynovalab.firebasestorage.app",
+    messagingSenderId: "994730822895",
+    appId: "1:994730822895:web:833ce9b578ed3e7f4ddf1a",
+    measurementId: "G-EZCCLT497R"
+  };
 window.STUDYNOVA_APP_NAME = window.STUDYNOVA_APP_NAME || "vocabulary";
 
 var SN = { ready:false, app:null, auth:null, db:null, user:null, localUser:null, saveTimer:null, cloudBusy:false };
